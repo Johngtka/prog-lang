@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="description" content="Popularne języki programowania dla ciekawskich"/>
+		<meta name="keywords" content="Języki, programowania, dla, ciekawskich, sprawdź" />
+		<title>SQL - Strukturalny Język Zapytań</title>
+		<link rel="icon" href="favicon.png" sizes="32x32" type="image/png"/>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<link rel="stylesheet" href="css/youtube.css" type="text/css"/>
+				<!--Sekcja czcionek-->
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+				<!--andsection-->
+			<script src="jquery-1.11.3.min.js"></script>
+			<script src="script.js"></script>
+	</head>
+	<body onload="zegarek();">
+		<div class="container">
+			<div id="logo">
+				<b>Języki Programowania</b>
+			</div>
+			<header>
+				<ul class="menu">
+					<li><a href="index.html">Strona Główna</a></li>
+					<li><a href="HTML.html">HTML</a></li>
+					<li><a href="JAVA.html">JavaScript</a></li>
+					<li><a href="PYTHON.html">Python</a></li>
+					<li><a href="CSS.html">CSS</a></li>
+					<li><a href="C++.html">C++</a></li>
+					<li><a href="BootStrap.html">BootStrap</a></li>
+					<li><a href="PHP.html">PHP</a></li>
+					<li><a href="SQL.html">SQL</a></li>
+				</ul>
+			</header>
+			<div class="social">
+				<div class="tarca">
+				<div id="zegar"></div>
+				</div>
+				<a href="https://www.youtube.com" target="_blank"><div class="yt"><i class="icon-youtube"></i></div></a>
+				<a href="https://www.instagram.com" target="_blank"><div class="ig"><i class="icon-instagram"></i></div></a>
+				<a href="https://www.instagram.com" target="_blank"><div class="rd"><i class="icon-reddit"></i></div></a>
+				<a href="https://www.facebook.com" target="_blank"><div class="fb"><i class="icon-facebook-squared"></i></div></a>
+				<a href="https://www.twitch.tv" target="_blank"><div class="twi"><i class="icon-twitch"></i></div></a>
+				<a href="https://www.meetup.com/pl-PL/" target="_blank"><div class="mt"><i class="icon-meetup"></i></div></a>
+			</div>
+			<section class="content">
+				<h1>Czym to jest:</h1>
+				<p>strukturalny język zapytań używany do tworzenia, modyfikowania baz danych oraz do umieszczania i pobierania danych z baz danych. Język SQL jest językiem deklaratywnym. Decyzję o sposobie przechowywania i pobrania danych pozostawia się systemowi zarządzania bazą danych (DBMS).Ponieważ SQL jest językiem interpretowanym, istnieje możliwość nadużyć w przypadku konstruowania zapytań z wykorzystaniem parametrów pochodzących z zewnątrz aplikacji. Szczególnie podatne na ten typ ataku są tworzone dynamicznie w oparciu o SQL-ową bazę danych serwisy internetowe. Jeśli twórca aplikacji nie zadba o sprawdzenie poprawności (tzw. walidację) danych wejściowych stanowiących część zapytania, atakujący może dopisać do zapytania („wstrzyknąć”) dodatkowe komendy lub zmienić ich sposób działania. Atak taki nosi nazwę SQL injection (wstrzyknięcie kodu za pomocą SQL).</p>
+				<h1>Historia:</h1>
+				<p>SQL został opracowany w latach 70. w firmie IBM. Stał się standardem w komunikacji z serwerami relacyjnych baz danych. Wiele współczesnych systemów relacyjnych baz danych używa do komunikacji z użytkownikiem SQL, dlatego potocznie mówi się, że korzystanie z relacyjnych baz danych to korzystanie z SQL-a. Pierwszą firmą, która włączyła SQL do swojego produktu komercyjnego, był Oracle. Dalsze wprowadzanie SQL-a, w produktach innych firm, wiązało się nierozłącznie z wprowadzaniem modyfikacji pierwotnego języka. Wkrótce utrzymanie dalszej jednolitości języka wymagało wprowadzenia standardu. Pierwotną nazwą języka miał być SEQUEL, jednakże okazało się, że nazwa ta była już zastrzeżona przez brytyjską wytwórnię lotniczą Hawker Siddeley.</p>
+				<h1>Struktura:</h1>
+				<p>Wczesne wersje specyfikacji (SQL86 i SQL89) były w dużej mierze jedynie określeniem wspólnej płaszczyzny łączącej różne istniejące wówczas produkty i pozostawiały wiele swobody twórcom implementacji. Z czasem jednak systemy komputerowe uległy integracji i rynek zaczął domagać się aplikacji oraz ich funkcji faktycznie współpracujących z wieloma różnymi bazami danych. Pojawiła się potrzeba określenia standardu ściślejszego. Mógł on jednocześnie obejmować nowe elementy, nieujęte do tej pory w języku. Tak powstał standard SQL92, obowiązujący w produktach komercyjnych do dziś.</p>
+				<h1>Funkcje silnika i oprogramowania pośredniczącego:</h1>
+				<p>Produkty związane z relacyjnymi bazami danych to nie tylko serwery. Sam serwer określa się często takimi nazwami jak „back end”, „engine”, czy też „motor/silnik bazy danych”. Przechowuje on dane oraz zapewnia ich pobieranie i aktualizacje w odpowiedzi na pobierane instrukcje w SQL-u. Uzupełnieniem serwera jest zazwyczaj „front end”, „oprogramowanie pośredniczące” czy też „fronton” – narzędzia upraszczające komunikację z serwerem i wyposażone w mechanizmy pozwalające wykorzystać pobrane dane. Należą do nich mechanizmy generowania i obsługi formularzy oraz raportów, języki czwartej generacji (4GL), graficzne języki zapytań, narzędzia konstrukcyjne użytkownika, oprogramowanie do prezentacji multimedialnych, systemy tworzenia hipertekstu, systemy CAD/CAM, arkusze kalkulacyjne, jak również interfejsy dostępu bezpośredniego. Wszystkie one wykorzystują do komunikacji z serwerem i wykonywania za jego pośrednictwem różnych operacji język SQL.</p>
+				<br>
+				<iframe 
+					class="ramka" 
+					src="https://www.youtube.com/embed/99JAI24Zd24"
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen
+				></iframe>
+			</section>
+		</div>
+			<footer class="stopka">
+				Wszelkie Prawa Zastrzerzone &copy; 2021r. J.G
+			</footer>
+	</body>
+</html>

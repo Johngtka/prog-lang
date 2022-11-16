@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="description" content="Popularne języki programowania dla ciekawskich"/>
+		<meta name="keywords" content="Języki, programowania, dla, ciekawskich, sprawdź" />
+		<title>Kaskadowe Arkusze Stylów - Język Stylów(CSS)</title>
+		<link rel="icon" href="favicon.png" sizes="32x32" type="image/png"/>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<link rel="stylesheet" href="css/youtube.css" type="text/css"/>
+				<!--Sekcja czcionek-->
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+				<!--andsection-->
+			<script src="jquery-1.11.3.min.js"></script>
+			<script src="script.js"></script>
+	</head>
+	<body onload="zegarek();">
+		<div class="container">
+			<div id="logo">
+				<b>Języki Programowania</b>
+			</div>
+			<header>
+				<ul class="menu">
+					<li><a href="index.html">Strona Główna</a></li>
+					<li><a href="HTML.html">HTML</a></li>
+					<li><a href="JAVA.html">JavaScript</a></li>
+					<li><a href="PYTHON.html">Python</a></li>
+					<li><a href="CSS.html">CSS</a></li>
+					<li><a href="C++.html">C++</a></li>
+					<li><a href="BootStrap.html">BootStrap</a></li>
+					<li><a href="PHP.html">PHP</a></li>
+					<li><a href="SQL.html">SQL</a></li>
+				</ul>
+			</header>
+			<div class="social">
+				<div class="tarca">
+				<div id="zegar"></div>
+				</div>
+				<a href="https://www.youtube.com" target="_blank"><div class="yt"><i class="icon-youtube"></i></div></a>
+				<a href="https://www.instagram.com" target="_blank"><div class="ig"><i class="icon-instagram"></i></div></a>
+				<a href="https://www.instagram.com" target="_blank"><div class="rd"><i class="icon-reddit"></i></div></a>
+				<a href="https://www.facebook.com" target="_blank"><div class="fb"><i class="icon-facebook-squared"></i></div></a>
+				<a href="https://www.twitch.tv" target="_blank"><div class="twi"><i class="icon-twitch"></i></div></a>
+				<a href="https://www.meetup.com/pl-PL/" target="_blank"><div class="mt"><i class="icon-meetup"></i></div></a>
+				</div>
+			<section class="content">
+				<h1>Historia:</h1>
+				<p>Pierwotnie HTML był językiem wyłącznie do opisu struktury dokumentu. Jednak z czasem zrodziła się potrzeba ożywienia wyglądu takich dokumentów. Powoli dodawano nowe znaczniki do HTML pozwalające kontrolować kolory, typografię, dodawać nowe media (np. obrazki). Te niestandardowe rozszerzenia realizowane były przez najpopularniejszych producentów przeglądarek bez porozumienia z drugim. Doprowadziło to do zaimplementowania nowych znaczników działających w konkretnej grupie przeglądarek i nie działających w innych przeglądarkach. Projektanci zostali zmuszeni do wysyłania do klienta różnych wersji tej samej witryny w zależności od użytej przeglądarki, uzyskanie identycznego wyglądu w różnych przeglądarkach było praktycznie niemożliwe. Håkon Wium Lie jako pierwszy zaproponował CHSS (Cascading HTML Style Sheets) w październiku 1994 roku. Później Lie i Bert Bos pracowali wspólnie nad standardem CSS (literka H została usunięta ze względu na możliwość stosowania stylów do innych podobnych do HTML języków).</p>
+				<p>W tym czasie została utworzona organizacja World Wide Web Consortium, która z Lie’em i Bosem na czele przejęła prace nad CSS. Pod koniec 1996 roku wydano oficjalną dokumentację CSS, Kaskadowe arkusze stylów, poziom 1. W3C zatwierdziło dwa oficjalne standardy CSS: CSS 1 i CSS 2, a także dnia 7 czerwca 2011 roku standard CSS 2.1. Trwają również prace nad CSS3. Wersja ta w stosunku do poprzedników wzbogaci się o wiele selektorów oraz właściwości, nowością jest także modułowy charakter języka – nie będzie to już jednolita rekomendacja, lecz kilkadziesiąt osobnych dokumentów, co pozwoli na włączanie lub wyłączanie odpowiednich modułów w przeglądarkach w zależności od chwilowych potrzeb.</p>
+				<h1>Cel:</h1>
+				<p>Przed pojawieniem się CSS wszystkie informacje dotyczące wyglądu dokumentów HTML (między innymi rodzaj i kolor czcionki, ułożenie, marginesy) zawarte były w znacznikach HTML. Język CSS umożliwia przeniesienie tych informacji do osobnego pliku. Skutkuje to uproszczeniem i zwiększeniem przejrzystości samego dokumentu HTML. Bez użycia CSS w przypadku definiowania stylu dla nagłówka (h1) lub podtytułu (h2) jego definicja musiałaby zostać powtórzona w każdym miejscu, w którym pojawia się dana struktura. Efektem takiego działania byłoby zmniejszenie czytelności dokumentu i jego odporności na błędy oraz trudność w utrzymaniu. Dodatkowo, zmiany stylu w jednym z miejsc wiązałyby się z koniecznością wprowadzania zmian w każdym miejscu wystąpienia. CSS pozwala na rozgraniczenie warstwy prezentacji od struktury. Język ten umożliwia definicję kolorów, czcionek, układu, rozmiarów, marginesów oraz wielu innych cech związanych z warstwą prezentacji.</p>
+				<h1>CSS Frameworks:</h1>
+				<p>CSS Frameworks to specjalnie stworzone biblioteki, których zadaniem jest ułatwienie definicji stylu dla stron internetowych z wykorzystaniem kaskadowych arkuszy stylów. Przykładem takich bibliotek są: Foundation, Blueprint, Bootstrap oraz Cascade Framework. Podobnie jak w przypadku programowania i bibliotek, CSS Frameworks są zazwyczaj dołączane jako zewnętrzne pliki .css w znaczniku HTML. Zapewniają one gotowe rozwiązania do projektowania stron.</p>
+				<br><br>
+				<iframe 
+					class="ramka"
+					src="https://www.youtube.com/embed/RJEKMbD_kEk" 
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen
+				 ></iframe>
+			</section>
+		</div>
+			<footer class="stopka">
+				Wszelkie Prawa Zastrzerzone &copy; 2021r. J.G
+			</footer>
+	</body>
+</html>

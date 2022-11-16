@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="description" content="Popularne języki programowania dla ciekawskich"/>
+		<meta name="keywords" content="Języki, programowania, dla, ciekawskich, sprawdź" />
+		<title>HTML - Język zawartości strony</title>
+		<link rel="icon" href="favicon.png" sizes="32x32" type="image/png"/>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<link rel="stylesheet" href="css/youtube.css" type="text/css"/>
+				<!--Sekcja czcionek-->
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+				<!--andsection-->
+			<script src="jquery-1.11.3.min.js"></script>
+			<script src="script.js"></script>
+	</head>
+	<body onload="zegarek();">
+		<div class="container">
+			<div id="logo">
+				<b>Języki Programowania</b>
+			</div>
+			<header>
+				<ul class="menu">
+					<li><a href="index.html">Strona Główna</a></li>
+					<li><a href="HTML.html">HTML</a></li>
+					<li><a href="JAVA.html">JavaScript</a></li>
+					<li><a href="PYTHON.html">Python</a></li>
+					<li><a href="CSS.html">CSS</a></li>
+					<li><a href="C++.html">C++</a></li>
+					<li><a href="BootStrap.html">BootStrap</a></li>
+					<li><a href="PHP.html">PHP</a></li>
+					<li><a href="SQL.html">SQL</a></li>
+				</ul>
+			</header>
+			<div class="social">
+				<div class="tarca">
+				<div id="zegar"></div>
+				</div>
+				<a href="https://www.youtube.com" target="_blank"><div class="yt"><i class="icon-youtube"></i></div></a>
+				<a href="https://www.instagram.com" target="_blank"><div class="ig"><i class="icon-instagram"></i></div></a>
+				<a href="https://www.instagram.com" target="_blank"><div class="rd"><i class="icon-reddit"></i></div></a>
+				<a href="https://www.facebook.com" target="_blank"><div class="fb"><i class="icon-facebook-squared"></i></div></a>
+				<a href="https://www.twitch.tv" target="_blank"><div class="twi"><i class="icon-twitch"></i></div></a>
+				<a href="https://www.meetup.com/pl-PL/" target="_blank"><div class="mt"><i class="icon-meetup"></i></div></a>
+			</div>
+			<section class="content">
+				<h1>Opis:</h1>
+				<p>HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej, nadając odpowiednie znaczenie semantyczne poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki, listy – oraz osadza w tekście dokumentu obiekty plikowe np. multimedia bądź elementy baz danych np. interaktywne formularze danych.</p>
+				<p>HTML umożliwia określenie wyglądu dokumentu w przeglądarce internetowej. Do szczegółowego opisu formatowania akapitów, nagłówków, użytych czcionek i kolorów, zalecane jest wykorzystywanie kaskadowych arkuszy stylów.</p>
+				<h1>Początki:</h1>
+				<p>W 1980 fizyk Tim Berners-Lee, pracujący dla ośrodka naukowo-badawczego CERN, stworzył prototyp hipertekstowego systemu informacyjnego – ENQUIRE. System wykorzystywano do organizowania i udostępniania dokumentów związanych z badaniami naukowymi. Rewolucyjność pomysłu polegała na tym, że użytkownik, posługując się odnośnikami, mógł z jednej lokalizacji przeglądać dokumenty fizycznie znajdujące się w innych miejscach na świecie.W 1989 Berners-Lee i inżynier oprogramowania CERN Robert Cailliau przedstawili równolegle dwie propozycje hipertekstowych systemów informacyjnych opartych na sieci Internet. Oba projekty cechowała podobna funkcjonalność. Rok później opracowali wspólną propozycję zaakceptowaną przez CERN – projekt WorldWideWeb (W3)</p>
+				<h1>Pierwsza Specyfikacja</h1>
+				<p>Pierwsza, publicznie dostępna, specyfikacja języka HTML, nazwana HTML Tags (pol. Znaczniki HTML), została zamieszczona w Internecie przez Bernersa-Lee w 1991. Zawierała 22 znaczniki, tworzące początkowy, prosty szkielet HTML-a. Trzynaście z tych elementów istnieje do tej pory w specyfikacji HTML4.</p>
+				<p>HTML został napisany w oparciu o język SGML, jednak nie posiadał formalnej definicji w SGML-u. Sytuacja zmieniła się w połowie 1993, kiedy organizacja IETF opublikowała pierwszą propozycję specyfikacji języka HTML autorstwa Bernersa-Lee i Dana Connolly – Hypertext Markup Language (HTML) Internet-Draft (pol. szkic) – zawierającą opis gramatyki w postaci SGML Document Type Definition (pol. definicja typu dokumentu). Opierając się na tym dokumencie twórcy przeglądarek eksperymentowali z HTML-em modyfikując atrybuty istniejących już znaczników oraz dodając całkowicie nowe. Szkic wygasł sześć miesięcy później, ale był znany z obsługiwania specyficznych dla przeglądarki NCSA Mosaic znaczników, służących do wstawiania obrazków. Fakt ten odzwierciedlał filozofię IETF bazowania przyszłych standardów na prototypach, które odniosły sukces. Podobnie Dave Raggett pod koniec 1993 w swoim szkicu HTML+ Discussion Document sugerował standaryzację już zaimplementowanych znaczników np. związanych z tworzeniem tabel i formularzy.</p>
+				<br><br><br><br>
+				<iframe 
+					class="ramka" 
+					src="https://www.youtube.com/embed/k2IydkL3EOs" 
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen
+				></iframe>
+			</section>
+		</div>
+			<footer class="stopka">
+				Wszelkie Prawa Zastrzerzone &copy; 2021r. J.G
+			</footer>
+	</body>
+</html>
