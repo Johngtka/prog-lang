@@ -1,77 +1,178 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pl-PL">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta name="description" content="Popularne języki programowania dla ciekawskich"/>
-		<meta name="keywords" content="Języki, programowania, dla, ciekawskich, sprawdź" />
-		<title>Języki Programowania Dla Ciekawskich</title>
-		<link rel="icon" href="favicon.png" sizes="32x32" type="image/png"/>
-		<link rel="stylesheet" href="style.css" type="text/css"/>
-		<link rel="stylesheet" href="css/youtube.css" type="text/css"/>
-				<!--Sekcja czcionek-->
-				<link rel="preconnect" href="https://fonts.gstatic.com">
-				<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
-				<link rel="preconnect" href="https://fonts.gstatic.com">
-				<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-				<link rel="preconnect" href="https://fonts.gstatic.com">
-				<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-				<link rel="preconnect" href="https://fonts.gstatic.com">
-				<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
-				<link rel="preconnect" href="https://fonts.gstatic.com">
-				<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-				<!--andsection-->
-		<script src="jquery-1.11.3.min.js"></script>
-		<script src="script.js"></script>	
-	</head>
-	<body onload="zegarek();">
-		<div class="container">
-			<div id="logo">
-				<b>Języki Programowania</b>
-			</div>
-			<header>
-				<ul class="menu">
-					<li><a href="HTML.html">HTML</a></li>
-					<li><a href="JAVA.html">JavaScript</a></li>
-					<li><a href="PYTHON.html">Python</a></li>
-					<li><a href="CSS.html">CSS</a></li>
-					<li><a href="C++.html">C++</a></li>
-					<li><a href="BootStrap.html">BootStrap</a></li>
-					<li><a href="PHP.html">PHP</a></li>
-					<li><a href="SQL.html">SQL</a></li>
-				</ul>
-			</header>
-			<div class="social">
-				<div class="tarca">
-				<div id="zegar"></div>
-				</div>
-				<a href="https://www.youtube.com" target="_blank"><div class="yt"><i class="icon-youtube"></i></div></a>
-				<a href="https://www.instagram.com" target="_blank"><div class="ig"><i class="icon-instagram"></i></div></a>
-				<a href="https://www.instagram.com" target="_blank"><div class="rd"><i class="icon-reddit"></i></div></a>
-				<a href="https://www.facebook.com" target="_blank"><div class="fb"><i class="icon-facebook-squared"></i></div></a>
-				<a href="https://www.twitch.tv" target="_blank"><div class="twi"><i class="icon-twitch"></i></div></a>
-				<a href="https://www.meetup.com/pl-PL/" target="_blank"><div class="mt"><i class="icon-meetup"></i></div></a>
-			</div>
-			<section class="content">
-				<h1>Wstęp:</h1>
-				<p>Podobnie jak języki naturalne, język programowania składa się ze zbiorów reguł syntaktycznych oraz semantyki, które opisują, jak należy budować poprawne wyrażenia oraz jak komputer ma je rozumieć. Wiele języków programowania posiada pisemną specyfikację swojej składni oraz semantyki, lecz inne zdefiniowane są jedynie przez oficjalne implementacje.</p>
-				<p>Język programowania pozwala na precyzyjny zapis algorytmów oraz innych zadań, jakie komputer ma wykonać. W niektórych pracach pojęcie języka programowania jest ograniczane wyłącznie do tych języków, w których można zapisać wszystkie istniejące algorytmy – od strony matematycznej oznacza to, że język musi być przynajmniej kompletny w sensie Turinga, jednak można się także spotkać z wykorzystaniem tego pojęcia na określenie również bardziej ograniczonych języków.</p>
-				<h1>Definicje:</h1>
-				<p>Język programowania może być zdefiniowany ze względu na kilka cech:</p>
-				<ul>
-				<li>Funkcja: język programowania służy do tworzenia programów komputerowych, których zadaniem jest przetwarzanie danych, wykonywanie obliczeń i algorytmów oraz kontrolowanie/obsługa zewnętrznych urządzeń, np. drukarek, robotów itd.</li>
-				<li>Przeznaczenie: języki naturalne służą do komunikacji między ludźmi, natomiast języki programowania umożliwiają wydawanie poleceń maszynom. Niektóre z języków są wykorzystywane również do kontrolowania jednego urządzenia przez inne. Przykładowo, program wykonywany na komputerze może wygenerować kod PostScript do sterowania pracą drukarki bądź wyświetlacza.</li>
-				<li>Konstrukcje składniowe: język programowania może zawierać konstrukcje składniowe do manipulowania strukturami danych oraz zarządzania przepływem sterowania.</li>
-				<li>Moc: teoria obliczeń klasyfikuje języki według rodzajów obliczeń, które można za ich pomocą zrealizować (hierarchia Chomsky’ego). We wszystkich językach zupełnych w sensie Turinga da się zaimplementować ten sam zbiór algorytmów. Przykładem często stosowanego języka niezupełnego jest SQL służący do komunikacji z bazą danych.</li>
-				</ul>
-				<h1>Przeznaczenie:</h1>
-				<p>Obecnie na świecie istnieją tysiące języków programowania i każdego roku powstają nowe. Od języków naturalnych odróżniają się wysoką precyzją oraz jednoznacznością. Człowiek podczas komunikacji między sobą stale popełnia niewielkie błędy lub pozostawia niedomówienia wiedząc, że drugi rozmówca najczęściej go zrozumie. Maszyny wykonują zadania dokładnie, dlatego każdą czynność trzeba opisać ściśle krok po kroku, ponieważ komputer nie potrafi dociec, co programista miał na myśli.</p>
-				<p>Wiele języków zostało zaprojektowanych od zera, lecz powszechna jest praktyka rozwijania już istniejących rozwiązań oraz celowego upodabniania jednego języka do innego. Pozwala to na szybsze opanowanie nowego języka przez programistów mających już doświadczenie w tworzeniu aplikacji. Potrzeba istnienia wielu różnorodnych języków wynika z dużej liczby sytuacji, w których są one wykorzystywane – każda posiada pewne specyficzne wymagania</p><br>
-				<p>Obecnie panuje tendencja do tworzenia języków umożliwiających rozwiązywanie problemów na wyższym poziomie abstrakcji. Pierwsze języki programowania były mocno związane z konkretnym sprzętem. Z biegiem czasu wynalezione zostały nowe techniki tworzenia oprogramowania znacznie poprawiające przenośność oraz opracowane algorytmy pozwalające automatycznie realizować zadania, którymi dotąd musiał zajmować się programista. Skraca to czas tworzenia aplikacji i zmniejsza liczbę okazji do popełnienia błędu, lecz w niektórych sytuacjach odbija się to negatywnie na wydajności (np. język Java).</p>
-			</section>
-		</div>
-			<footer class="stopka">
-				Wszelkie Prawa Zastrzerzone &copy; 2021r. J.G
-			</footer>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="description"
+      content="Popularne języki programowania dla ciekawskich"
+    />
+    <meta
+      name="keywords"
+      content="Języki, programowania, dla, ciekawskich, sprawdź"
+    />
+    <title>Języki Programowania Dla Ciekawskich</title>
+    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/youtube.css" type="text/css" />
+    <!--Sekcja czcionek-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!--andsection-->
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="zegarek();">
+    <div class="container">
+      <div id="logo">
+        <b>Języki Programowania</b>
+      </div>
+      <header>
+        <ul class="menu">
+          <li><a href="HTML.html">HTML</a></li>
+          <li><a href="JAVA.html">JavaScript</a></li>
+          <li><a href="PYTHON.html">Python</a></li>
+          <li><a href="CSS.html">CSS</a></li>
+          <li><a href="C++.html">C++</a></li>
+          <li><a href="BootStrap.html">BootStrap</a></li>
+          <li><a href="PHP.html">PHP</a></li>
+          <li><a href="SQL.html">SQL</a></li>
+        </ul>
+      </header>
+      <div class="social">
+        <div class="tarca">
+          <div id="zegar"></div>
+        </div>
+        <a href="https://www.youtube.com" target="_blank"
+          ><div class="yt"><i class="icon-youtube"></i></div
+        ></a>
+        <a href="https://www.instagram.com" target="_blank"
+          ><div class="ig"><i class="icon-instagram"></i></div
+        ></a>
+        <a href="https://www.instagram.com" target="_blank"
+          ><div class="rd"><i class="icon-reddit"></i></div
+        ></a>
+        <a href="https://www.facebook.com" target="_blank"
+          ><div class="fb"><i class="icon-facebook-squared"></i></div
+        ></a>
+        <a href="https://www.twitch.tv" target="_blank"
+          ><div class="twi"><i class="icon-twitch"></i></div
+        ></a>
+        <a href="https://www.meetup.com/pl-PL/" target="_blank"
+          ><div class="mt"><i class="icon-meetup"></i></div
+        ></a>
+      </div>
+      <section class="content">
+        <h1>Wstęp:</h1>
+        <p>
+          Podobnie jak języki naturalne, język programowania składa się ze
+          zbiorów reguł syntaktycznych oraz semantyki, które opisują, jak należy
+          budować poprawne wyrażenia oraz jak komputer ma je rozumieć. Wiele
+          języków programowania posiada pisemną specyfikację swojej składni oraz
+          semantyki, lecz inne zdefiniowane są jedynie przez oficjalne
+          implementacje.
+        </p>
+        <p>
+          Język programowania pozwala na precyzyjny zapis algorytmów oraz innych
+          zadań, jakie komputer ma wykonać. W niektórych pracach pojęcie języka
+          programowania jest ograniczane wyłącznie do tych języków, w których
+          można zapisać wszystkie istniejące algorytmy – od strony matematycznej
+          oznacza to, że język musi być przynajmniej kompletny w sensie Turinga,
+          jednak można się także spotkać z wykorzystaniem tego pojęcia na
+          określenie również bardziej ograniczonych języków.
+        </p>
+        <h1>Definicje:</h1>
+        <p>
+          Język programowania może być zdefiniowany ze względu na kilka cech:
+        </p>
+        <ul>
+          <li>
+            Funkcja: język programowania służy do tworzenia programów
+            komputerowych, których zadaniem jest przetwarzanie danych,
+            wykonywanie obliczeń i algorytmów oraz kontrolowanie/obsługa
+            zewnętrznych urządzeń, np. drukarek, robotów itd.
+          </li>
+          <li>
+            Przeznaczenie: języki naturalne służą do komunikacji między ludźmi,
+            natomiast języki programowania umożliwiają wydawanie poleceń
+            maszynom. Niektóre z języków są wykorzystywane również do
+            kontrolowania jednego urządzenia przez inne. Przykładowo, program
+            wykonywany na komputerze może wygenerować kod PostScript do
+            sterowania pracą drukarki bądź wyświetlacza.
+          </li>
+          <li>
+            Konstrukcje składniowe: język programowania może zawierać
+            konstrukcje składniowe do manipulowania strukturami danych oraz
+            zarządzania przepływem sterowania.
+          </li>
+          <li>
+            Moc: teoria obliczeń klasyfikuje języki według rodzajów obliczeń,
+            które można za ich pomocą zrealizować (hierarchia Chomsky’ego). We
+            wszystkich językach zupełnych w sensie Turinga da się
+            zaimplementować ten sam zbiór algorytmów. Przykładem często
+            stosowanego języka niezupełnego jest SQL służący do komunikacji z
+            bazą danych.
+          </li>
+        </ul>
+        <h1>Przeznaczenie:</h1>
+        <p>
+          Obecnie na świecie istnieją tysiące języków programowania i każdego
+          roku powstają nowe. Od języków naturalnych odróżniają się wysoką
+          precyzją oraz jednoznacznością. Człowiek podczas komunikacji między
+          sobą stale popełnia niewielkie błędy lub pozostawia niedomówienia
+          wiedząc, że drugi rozmówca najczęściej go zrozumie. Maszyny wykonują
+          zadania dokładnie, dlatego każdą czynność trzeba opisać ściśle krok po
+          kroku, ponieważ komputer nie potrafi dociec, co programista miał na
+          myśli.
+        </p>
+        <p>
+          Wiele języków zostało zaprojektowanych od zera, lecz powszechna jest
+          praktyka rozwijania już istniejących rozwiązań oraz celowego
+          upodabniania jednego języka do innego. Pozwala to na szybsze
+          opanowanie nowego języka przez programistów mających już doświadczenie
+          w tworzeniu aplikacji. Potrzeba istnienia wielu różnorodnych języków
+          wynika z dużej liczby sytuacji, w których są one wykorzystywane –
+          każda posiada pewne specyficzne wymagania
+        </p>
+        <br />
+        <p>
+          Obecnie panuje tendencja do tworzenia języków umożliwiających
+          rozwiązywanie problemów na wyższym poziomie abstrakcji. Pierwsze
+          języki programowania były mocno związane z konkretnym sprzętem. Z
+          biegiem czasu wynalezione zostały nowe techniki tworzenia
+          oprogramowania znacznie poprawiające przenośność oraz opracowane
+          algorytmy pozwalające automatycznie realizować zadania, którymi dotąd
+          musiał zajmować się programista. Skraca to czas tworzenia aplikacji i
+          zmniejsza liczbę okazji do popełnienia błędu, lecz w niektórych
+          sytuacjach odbija się to negatywnie na wydajności (np. język Java).
+        </p>
+      </section>
+    </div>
+    <footer class="stopka">
+      Wszelkie Prawa Zastrzerzone &copy; 2021r. J.G
+    </footer>
+  </body>
 </html>
